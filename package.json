@@ -8,7 +8,7 @@
     "watch": "cross-env NODE_ENV=development nodemon index.js",
     "build:ui": "rm -rf build && cd ../notes-frontend/ && npm run build --prod && cp -r build ../notes-backend",
     "deploy": "git push heroku master",
-    "deploy:full": "npm run build:ui && git add . && git commit -m 'starting testing' && git push && npm run deploy",
+    "deploy:full": "npm run build:ui && git add . && git commit -m 'more tests; users' && git push && npm run deploy",
     "logs:prod": "heroku logs --tail",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -17,10 +17,12 @@
   "author": "Malpel",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
-    "mongoose": "^5.6.4"
+    "mongoose": "^5.6.4",
+    "mongoose-unique-validator": "^2.0.3"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
