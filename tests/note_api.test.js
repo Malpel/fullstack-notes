@@ -156,7 +156,7 @@ describe('when there is a saved user initially', () => {
         expect(usernames).toContain(newUser.username)
     })
 
-    test('creation fails with proper statuscode and message is username is already taken', async () => {
+    test('creation fails with proper statuscode and message if username already exists', async () => {
         const usersAtStart = await helper.usersInDb()
 
         console.log(usersAtStart[0].username)

@@ -1,8 +1,8 @@
 POST http://localhost:3001/api/notes
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlciIsImlkIjoiNWQyZDhiODZjOTEwZWQ1MTAyMWUzZTIyIiwiaWF0IjoxNTYzMjY3NjYxfQ.zeQIkpTwXgJrKNCD0GG1gmHjrpf96z-1j7rPVtyHeDc
 
 {
-    "content": "a user wrote this note",
-    "important": true,
-    "user": "5d2c54a99d280b3b894f80a2"
+    "content": "Token-based authorization",
+    "important": true
 }
